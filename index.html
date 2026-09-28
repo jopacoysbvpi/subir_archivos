@@ -1,0 +1,31 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subir archivo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Subir un archivo</h1>
+
+        <form action="guardar.php" method="POST" enctype="multipart/form-data">
+
+            <!-- Obligatorio seleccionar un archivo -->
+            <input type="file" name="archivo" accept=".jpg,.jpeg,.png,.pdf" required>
+
+            <button type="submit">Subir archivo</button>
+
+        </form>
+
+        <p>Archivos permitidos: JPG, PNG y PDF</p>
+
+    </div>
+
+</body>
+</html>
